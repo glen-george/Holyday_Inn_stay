@@ -1,0 +1,69 @@
+.login-box{
+    width: 390px;
+}
+
+
+.login-page{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.register-page{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-box input{
+    padding: 12px;
+    width: 100%;
+    border:  1px solid #f1f2f6;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.login-btn{
+    background-color: #198754;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+.login-btn:hover{
+    background-color: #0f7747;
+ 
+}
+.create-new-acc-btn{
+    margin-top: 15px;
+     display: block;
+   box-shadow: inset 0 0 0 3px yellow;
+   background: transparent;
+    border: none;
+    color: yellow;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 60%;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;  
+}
+.create-new-acc-btn:hover{
+    background: yellow;
+    color: green;
+ 
+   
+   
+}
+

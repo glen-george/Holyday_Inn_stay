@@ -1,0 +1,486 @@
+*{
+     font-family: "Figtree", sans-serif;
+     margin:0;
+     padding:0;
+     scroll-behavior: smooth;
+     box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: #4d4d4d;
+ 
+
+}
+
+
+.nav-link-custom {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.nav-link-custom:hover {
+  color: yellow;
+  transform: scale(1.0);
+}
+
+
+.footer-link:hover{
+  color: yellow! important;
+}
+.explore_btn{
+    box-shadow: inset 0 0 0 2px #198754;
+    display: inline-block;
+    padding: 18px 15px;
+    color:#ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top:60px;
+}
+
+.explore_btn:hover{
+  background-color: #198754;
+  color: white;
+}
+.hero-banner{
+   min-height:85vh;
+  height:auto;
+ background:url("https://digital.ihg.com/is/image/ihg/holiday-inn-chennai-5090399241-4x3"); 
+ width: 100%;
+ background-position: center;
+ background-size: cover;
+
+}
+.hero-title{
+  font-size:clamp(2rem,5vw,4rem);
+}
+.hero-bg{
+ background-color: rgba(0, 0, 0, 0.767);
+width: 100%;
+  min-height:85vh;
+  height:auto;
+ align-items: center;
+ display:flex;
+ text-align:center;
+ justify-content: center;
+ color: #ffffff;
+}
+
+.fixed-bg .container{
+  padding: 40px 15px;
+}
+
+.bg-tint{
+    background-color: #1a1a1a9c;
+     min-height:80vh;
+    height:auto;
+    padding:40px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+
+}
+.card-grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   gap: 20px;
+   margin-top: 30px;
+
+}
+
+
+
+.fixed-bg h2{
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+.card {
+  padding: 20px;
+  border:none;
+  border-radius: 12px;
+  background: linear-gradient(149deg, #198754 0%, #105e39 96.86%);
+}
+.card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+
+.section-title {
+  margin: 20px 0;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+   position: relative;
+  z-index: 2;
+}
+
+.img-row{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 15px 30px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+    
+}
+.img-card{
+  flex: 0 0 auto;
+  width: 250px;
+  height: 252px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  scroll-snap-align: start;
+}
+
+
+
+
+.img-card:hover{
+   transform: scale(1.0);
+}
+
+
+@media (max-width: 768px) {
+
+  .bg-tint{
+    padding: 30px 15px;
+  }
+
+  .card-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .card{
+    padding: 15px;
+  }
+
+  .card h3{
+    font-size: 20px;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+
+  .fixed-bg h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .img-card {
+    width: 220px;
+    height: 180px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+
+@media (hover: hover) {
+  .img-card:hover {
+    transform: scale(1.06);
+    z-index: 3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .img-row {
+    padding-top: 0;
+  }
+
+  .img-card {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width:576px){
+  .img-card{
+    width:220px;
+  }
+}
+.img-card:hover {
+  transform: scale(1.06);
+  z-index: 3;
+  position: relative;
+  
+}
+
+.img-row::-webkit-scrollbar {
+  display: none;
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.brands-section {
+  background-color: #19875465;
+  padding: 40px 0;
+}
+
+.brands-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.brand-card {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background: white;
+}
+
+.brand-image {
+  width: 50%;
+}
+
+.brand-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-content {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-content h3 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.brand-content p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.brand-content a {
+  text-decoration: none;
+  color: #00584b;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.slider-btn {
+  width: 130px;
+  margin: 25px auto 0;
+  background: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-btn button {
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* iamge pop up Modal */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 45px;
+  cursor:pointer;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .testimonial-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brands-title {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+@media (max-width:768px){
+  .about-img{
+    max-height: 300px !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+
+@media (max-width:576px){
+  .card-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .card{
+    padding:15px;
+  }
+
+  .card h3{
+    font-size:20px;
+  }
+
+  .card p{
+    font-size:14px;
+  }
+}
+
+@media (max-width:768px){
+  .brand-card{
+    flex-direction:column;
+  }
+
+  .brand-image,
+  .brand-content{
+    width:100%;
+  }
+
+  .brand-content{
+    padding:20px;
+  }
+
+  .brand-content h3{
+    font-size:2rem;
+  }
+
+  .brand-content p{
+    font-size:1rem;
+  }
+}
+.fixed-bg{
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width:768px){
+  .fixed-bg{
+    background-attachment: scroll !important;
+  }
+}
+.fixed-bg h2{
+  font-size: 3rem;
+}
+
+@media (max-width:768px){
+  .fixed-bg h2{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:576px){
+  .fixed-bg h2{
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+}
+
+
+
+/* mobile media query */
+@media (max-width:768px){
+
+  .hero-title{
+    font-size:2.5rem;
+  }
+
+  .brand-card{
+    flex-direction:column;
+  }
+
+  .brand-image,
+  .brand-content{
+    width:100%;
+  }
+
+  .brand-content{
+    padding:20px;
+  }
+
+  .brand-content h3{
+    font-size:2rem;
+  }
+
+  .brand-content p{
+    font-size:1rem;
+  }
+
+  .hero-banner,
+  .hero-bg{
+    min-height:auto;
+    padding:40px 0;
+  }
+}
